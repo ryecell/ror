@@ -10,7 +10,7 @@ from tkinter import *
 
 
 root = Tk()
-root.title('Kinematics Engine')
+root.title('Kinematics Calculator')
 results_string = StringVar()
 results_string.set('RESULTS')
 
@@ -331,8 +331,6 @@ def calc_a():
 
     results_string.set(f'{work}\n Acceleration: {round(a2, 2)} m/s^2')
 
-
-# tkinter visual elements
 label1 = Label(root, text='Enter The Known Variables', font='bold')
 label1.grid(row=0, column=0, columnspan=6, padx=10, pady=10, sticky='NESW')
 d_label = Label(root, text='d-Displacement (meters)')
